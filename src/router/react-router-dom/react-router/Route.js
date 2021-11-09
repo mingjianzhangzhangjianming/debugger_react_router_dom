@@ -1,7 +1,7 @@
 import React from 'react'
 import { isValidElementType } from 'react-is'
 import PropTypes from 'prop-types'
-import invariant from 'tiny-invariant'
+import invariant from '../utils/tiny-invariant'
 import warning from 'tiny-warning'
 
 import RouterContext from './RouterContext.js'
@@ -33,7 +33,7 @@ class Route extends React.Component {
             <RouterContext.Consumer>
                 {context => {
                     console.log('context ><><><><', context)
-                    invariant(context, 'You should not use <Route> outside a <Router>')
+                    // invariant(context, 'You should not use <Route> outside a <Router>')
 
                     const location = this.props.location || context.location
                     const match = this.props.computedMatch

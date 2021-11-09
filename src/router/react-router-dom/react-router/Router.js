@@ -65,6 +65,12 @@ class Router extends React.Component {
                     staticContext: this.props.staticContext
                 }}
             >
+                {console.log('routerContext -> value', {
+                    history: this.props.history,
+                    location: this.state.location,
+                    match: Router.computeRootMatch(this.state.location.pathname),
+                    staticContext: this.props.staticContext
+                })}
                 <HistoryContext.Provider children={this.props.children || null} value={this.props.history} />
             </RouterContext.Provider>
         )

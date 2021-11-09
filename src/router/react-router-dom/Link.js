@@ -1,5 +1,5 @@
 import React from 'react'
-import { __RouterContext as RouterContext } from 'react-router'
+import { __RouterContext as RouterContext } from './react-router'
 import { createPath } from 'history'
 import PropTypes from 'prop-types'
 import invariant from './utils/tiny-invariant'

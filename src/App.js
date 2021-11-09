@@ -16,10 +16,10 @@ function App() {
     return (
         <div className="App">
             <Router>
-                {/* <div className="navs">
+                <div className="navs">
                     <Link to="/">home</Link>
                     <Link to="/detail">detail</Link>
-                </div> */}
+                </div>
                 <div className="view">
                     <Route exact path="/" component={Home} />
                     <Route path="/detail" component={Detail} />
